@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   validates :username, presence: true
 
   def slug
-  
+  binding.pry
     self.username.downcase.gsub(' ','-')
   end
 
